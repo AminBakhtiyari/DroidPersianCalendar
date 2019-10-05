@@ -316,7 +316,7 @@ object UpdateUtils {
         if (Utils.isNotifyDate()) {
             val notificationManager = context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-                val importance = NotificationManager.IMPORTANCE_LOW
+                val importance = NotificationManager.IMPORTANCE_HIGH
                 val channel = NotificationChannel(NOTIFICATION_ID.toString(),
                         context.getString(R.string.app_name), importance)
                 channel.setShowBadge(false)
